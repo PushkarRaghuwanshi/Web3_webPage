@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: "Syne", sans-serif; */
+    overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7vw 4vw;
+}
+
+nav h6{
+    font-size: 1.7vw;
+    /* background: blue; */
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    background: linear-gradient( to left, red,yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav h6 span{
+    position: absolute;
+    margin-top: 0.05vw;
+    background: linear-gradient(to left, red,yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav h5{
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(183, 182, 182, 0.839);
+    /* background: wheat; */
+}
+
+
+.Page1{
+    width: 100%;
+    min-height: 100vh; 
+    background: #000;
+    /* padding-top: 2vw; */
+    position: relative;
+    overflow-x: hidden;
+}
+
+.Page1 h1, .Page1 h2{
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Syne", sans-serif;
+}
+
+.Page1 h1{
+    background: linear-gradient(to right, white,rgb(90, 90, 90), white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.Page1 h2{
+    background: linear-gradient(43deg, rgba(255, 0, 0, 0.622), yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.Page1 img{
+    /* margin-left: 30%; */
+    position: absolute;
+    left: 30%;
+}
+
+.page1-content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    /* position: relative; */
+    /* overflow-x: hidden; */
+}
+
+.pink-blur{
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    background: rgba(238, 141, 157, 0.415);
+    border-radius: 50%;
+    filter: blur(130px);
+    left: -15%;
+    top: 35%;
+}
+
+.orange-blur{
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    background: rgba(251, 186, 65, 0.476);
+    border-radius: 50%;
+    filter: blur(130px);
+    right: -18%;
+    top: 20%;
+}
+
+.left1{
+    /* background: red; */
+    padding: 0 3vw;
+    height: 100%;
+}
+
+.card{
+    padding: 2vw 2vw;
+    /* text-align: center; */
+    border: 2.3px solid gray;
+    border-radius: 30px;
+    margin-bottom: 1vw;
+    color: white;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(300px);
+}
+
+.card h3{
+    font-size: 2.7vw;
+    font-weight: 600;
+    
+}
+
+.card h4{
+    font-size: 1.2vw;
+    /* background: white; */
+    text-transform: uppercase;
+    color: rgb(111, 111, 111);
+}
+
+.right1{
+    padding: 3vw 3vw;
+    /* background: green; */
+    height: 100%;
+}
+
+.right1 p{
+    font-size: 1.3vw;
+    font-weight: 200;
+    color: white;
+}
+
+.right1 button{
+    margin-top: 2.6vw;
+    padding: 1vw 1.4vw;
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* .moving-text{
+    width: 100%;
+    height: 70px;
+    background: gray;
+    margin-bottom: 10px;
+} */
+
+.text{
+    height: 12vh;
+    width: 130%;
+    background-color: #353131af;
+    transform: rotate(-2deg);
+    /* border: 3px solid #353131d6 ; */
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    font-family: "Syne", sans-serif;
+    font-size: 1.7vw;
+    margin-bottom: 10vh;
+    color: white;
+    /* z-index: 999; */
+   /* margin-top: 5vh; */
+}
+
+.text i{
+    color: rgb(198, 135, 17);
+    font-size: 2vw;
+}
+
+
+/* --------------------- Page2 ---------------- */
+
+.Page2{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    position: relative;
+    z-index: 12;
+}
+
+.Page2 nav{
+    width: 100%;
+    height: 15vh;
+    /* background: blue; */
+    /* text-align: center; */
+}
+
+.Page2 nav h1{
+    /* height: 50vh; */
+    /* padding-top: 3vw; */
+    /* background: blue; */
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 4.5vw;
+    font-weight: 800;
+    font-family: "Syne", sans-serif;
+    /* padding-top: -110px; */
+}
+
+.page2-content{
+    width: 100%;
+    height: 85vh;
+    /* background: red; */
+    display: flex;
+    padding: 2vw 3vw;
+    /* z-index: 10; */
+}
+
+.page2-content>i{
+    position: absolute;
+    font-size: 45vw;
+    color: rgba(255, 166, 0, 0.351);
+    filter: blur(40px);
+    top: 5%;
+    left: 20%;
+    transform: rotate(13deg);
+    z-index: -1;
+}
+
+.left2{
+    color: white;
+    width: 45%;
+    height: 100%;
+    /* background: blue; */
+    padding: 1vw 2vw;
+}
+
+.left2 h2{
+    padding-top: 2.5vw;
+    font-size: 4.8vw;
+    font-weight: 700;
+    margin-bottom: 1.8vw;
+}
+
+.left2 p {
+    font-size: 1.1vw;
+    margin-bottom: 1.8vw;
+}
+
+.left2 h3{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.left2 h3>i{
+    margin-right: 0.8vw;
+}
+
+.left2 button{
+    margin-top: 1.8vw;
+    padding: 1vw 2vw;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid gray;
+    color: white;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.left2 button span {
+    margin-left: 1vw;
+    font-size: 1.5vw;
+}
+
+.right2{
+    width: 55%;
+    height: 100%;
+    /* background: green; */
+}
+
+.image{
+    /* background: red; */
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+
+.info{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.215);  
+    /* backdrop-filter: blur(100px);    */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.447);
+    border-top: 1px solid rgba(128, 128, 128, 0.447);
+}
+
+.info h3{
+    font-size: 2vw;
+    color: white;
+    font-weight: 500;
+}
+
+.info p{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.info .starr1{
+    position: absolute;
+    font-size: 22vw;
+    left: -10%;
+    top: -50%;
+    transform: rotate(10deg);
+    color: rgba(235, 163, 30, 0.642);
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.info .starr2{
+    position: absolute;
+    font-size: 18vw;
+    color: rgba(235, 163, 30, 0.642);
+    filter: blur(20px);
+    right: -8%;
+    bottom: -15%;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+/* ------------------- Page-3 ---------------- */
+.Page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 12;
+    position: relative;
+    padding: 1vw 0;
+}
+
+.Page3 nav{
+    width: 100%;
+    height: 30vh;
+    /* background: red; */
+}
+
+.Page3 nav h1{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Syne", sans-serif;
+}
+
+.boxes{
+    width: 100%;
+    height: 50vh;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.bg-light1{
+    width: 20vw;
+    height: 20vw;
+    background: orange;
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+}
+
+.bg-light2{
+    width: 20vw;
+    height: 20vw;
+    background: orange;
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+}
+
+.bg-light3{
+    width: 20vw;
+    height: 20vw;
+    background: orange;
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    z-index: -1;
+    left: 90%;
+}
+
+.bg-light4{
+    width: 20vw;
+    height: 20vw;
+    background: orange;
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    z-index: -1;
+    left: -10%;
+}
+
+.box{
+    width: 30%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.285);
+    border-radius: 20px;
+    padding: 2.5vw 1.3vw;
+    border:1px solid rgba(106, 106, 106, 0.531);
+    box-shadow: 0 5px 20px 2px rgba(255, 166, 0, 0.342);
+}
+
+.stars i{
+    color: orange;
+}
+
+.box h6{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+
+.box p{
+    margin-top: 2vw;
+    font-weight: 200;
+    color: white;
+}
+
+.box span{
+    color: gray;
+}
+
+
+/* -------------------- footer -------------- */
+footer{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    color: rgba(255, 255, 255, 0.82);
+    position: relative;
+    overflow-y: hidden;
+}
+
+.blur-footer{
+    height: 25vw;
+    width: 15vw;
+    background: linear-gradient(43deg, rgb(186, 17, 46) 20%,yellow 100%);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(200px);
+    left: 5%;
+    z-index: 999;
+ }
+
+ .blur2-footer{
+    height: 20vw;
+    width: 10vw;
+    background: linear-gradient(43deg, rgb(186, 17, 46) 20%,yellow 100%);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(150px);
+    /* top: 50%; */
+    /* top: 380%; */
+    right: 0;
+    z-index: 999;
+ }
+
+footer h1{
+    background-image: linear-gradient(43deg, rgb(186, 17, 46) 20%,rgba(255, 255, 0, 0.774) 100%);   
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 4vw;
+    margin-top: 6vw;
+}
+
+.cardss{
+    display: flex;
+}
+
+.card1-footer{
+    height: 20vh;
+    width: 30%;
+    /* background-color: blueviolet; */
+    /* margin: 3vw; */
+    /* margin-top: 8vw; */
+    margin-left: 4vw;
+}
+
+.card1-footer p{
+    font-size: 1.1vw;
+    padding: 2vw 0;
+    color: gray;
+}
+
+.social img{
+    height: 30px;
+    width: 30px;
+    margin-left: 0.3vw;
+    border-radius: 50%;
+}
+
+
+
+
+.card2-footer,.card3-footer{
+    height: 30vh;
+    width: 20%;
+    /* background-color: blueviolet; */
+    /* margin: 3vw; */
+    /* margin-top: 8vw; */
+    margin-left: 7vw;
+}
+
+
+.card2-footer,.card3-footer h3{
+    padding: 2vw 0;
+    padding-bottom: 0;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.card2-footer h4{
+    font-size: 1vw;
+    line-height: 1.5;
+    padding-top: 0.5vw;
+}
+
+.card3-footer h4{
+    font-size: 1vw;
+    line-height: 2.5;
+}
+
+
+
+footer .line{
+    height: 0.1px;
+    background-color: white;
+    margin-top: 1vw;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 1vw;
+    font-weight: 100;
+    color: lightgray;
+}
